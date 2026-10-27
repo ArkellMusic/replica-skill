@@ -1,68 +1,68 @@
 feature,area,priority,original,clone,notes
-Sign up with email and password,onboarding,must,yes,no,S02
-Sign in with Apple,onboarding,must,yes,no,required by App Store rules if any other social login is offered
-Sign in with Google,onboarding,could,yes,no,
-Pick favourite artists to seed home,onboarding,should,yes,no,S03; seeds recs from your own catalogue
-Home feed with recently played grid,home,must,yes,no,S04
-Home shelves (new releases / made for you / genres),home,should,yes,no,S04; rule-based at first
-Home filter chips (All / Music / Podcasts),home,could,yes,no,
-Search across tracks artists albums playlists podcasts,search,must,yes,no,S06
-Search autocomplete and recent searches,search,should,yes,no,S06
-Browse by genre / category tiles,search,should,yes,no,S05 S07
-Play a track with background audio,playback,must,yes,no,S13; AVAudioSession background mode
-Persistent mini player,playback,must,yes,no,global
-Now Playing full screen with scrubber,playback,must,yes,no,S13
-Lock screen and Control Centre controls,playback,must,yes,no,MPRemoteCommandCenter
-Shuffle and repeat (off / all / one),playback,must,yes,no,S13
-Play queue: add to queue and reorder,playback,must,yes,no,S14
-Gapless playback,playback,should,yes,no,
-Crossfade setting,playback,could,yes,no,S22
-Volume normalization,playback,could,yes,no,needs loudness analysis at ingest
-Sleep timer,playback,should,yes,no,
-AirPlay / Bluetooth output picker,playback,should,yes,no,S21 via AVRoutePickerView
-Remember playback state across app restarts,playback,must,yes,no,
-Synced lyrics,playback,could,yes,no,S15; only for lyrics you own or license
-Track credits,playback,could,yes,no,
-Like a track (Liked Songs),library,must,yes,no,S12
-Your Library with type filters,library,must,yes,no,S08
-Library sort (recents / added / A-Z / creator),library,should,yes,no,S08
-Pin up to 4 items in library,library,could,yes,no,S08
-Save albums and follow artists,library,must,yes,no,S10 S11
-Create rename and delete playlist,playlists,must,yes,no,S18
-Add track to playlist from any row,playlists,must,yes,no,S16 S17
-Reorder and remove playlist tracks,playlists,must,yes,no,S18
-Custom playlist cover and description,playlists,should,yes,no,S18
-Auto 2x2 mosaic cover,playlists,should,yes,no,
-Duplicate-track warning on add,playlists,could,yes,no,
-Playlist folders,playlists,could,yes,no,
-Public / private playlist toggle,playlists,should,yes,no,
-Collaborative playlists,playlists,could,yes,no,needs users of your own
-Album page,catalogue,must,yes,no,S10
-Artist page with popular tracks and discography,catalogue,must,yes,no,S11
-Explicit content badge and filter,catalogue,should,yes,no,S22
-Podcast show page with follow,podcasts,must,yes,no,S19
-Episode playback with resume position,podcasts,must,yes,no,S20 F07
-Playback speed for episodes,podcasts,should,yes,no,
-Mark episode as played,podcasts,should,yes,no,
-Download playlists albums and episodes offline,offline,must,yes,no,F06; the premium feature users pay for
-Offline mode showing only downloaded content,offline,should,yes,no,S08 Downloaded filter
-Download over Wi-Fi only setting,offline,should,yes,no,S22
-Audio quality setting (streaming and download),settings,should,yes,no,S22
-Settings screen,settings,must,yes,no,S22
-Private session,settings,could,yes,no,
-Share link to track / playlist,social,should,yes,no,F09; universal links
-User profile with public playlists,social,could,yes,no,S23
-Free tier with ads and skip limits,monetisation,could,yes,no,needs an ad network; maybe skip and go paid only
-Premium subscription with in-app purchase,monetisation,must,yes,no,S24; StoreKit
-Artist / label upload portal to add the catalogue,catalogue,must,no,no,not in Spotify app; your clone needs it because you own the content
-Recommendations (personal mixes),discovery,could,yes,no,start rule-based on own listen events
-Mainstream music catalogue,content,skip,yes,skip,licensed from labels and publishers
-Licensed lyrics catalogue,content,skip,yes,skip,licensed from lyrics providers
-Audiobooks catalogue and hours,content,skip,yes,skip,publisher deals
-Exclusive / video podcasts,content,skip,yes,skip,owned or licensed shows
-Discover Weekly / DJ trained on Spotify data,discovery,skip,yes,skip,their listening data; rebuild the idea on your own data
-Spotify Connect on partner hardware,devices,skip,yes,skip,partner deals with speaker / TV / car makers
-Existing users and social graph (friend activity / Jam),social,skip,yes,skip,the network is not yours
-Wrapped brand and design,social,skip,yes,skip,trademark; a yearly recap of your own is fine
-Spotify Web API as data source,content,skip,yes,skip,developer terms forbid building a competing service on it
-Brand assets (logo / green / Circular font / editorial covers),brand,skip,yes,skip,reference only in replica/screens
+Registro con email y contraseña,onboarding,must,yes,no,S02
+Iniciar sesión con Apple,onboarding,must,yes,no,obligatorio según las normas del App Store si se ofrece otro inicio con redes
+Iniciar sesión con Google,onboarding,could,yes,no,
+Elegir artistas favoritos para alimentar el inicio,onboarding,should,yes,no,S03; alimenta las recomendaciones con tu propio catálogo
+Portada de inicio con cuadrícula de recientes,inicio,must,yes,no,S04
+Estantes del inicio (novedades / hecho para ti / géneros),inicio,should,yes,no,S04; basados en reglas al principio
+Chips de filtro del inicio (Todo / Música / Pódcasts),inicio,could,yes,no,
+Búsqueda en canciones artistas álbumes playlists y pódcasts,búsqueda,must,yes,no,S06
+Autocompletado y búsquedas recientes,búsqueda,should,yes,no,S06
+Explorar por mosaicos de género / categoría,búsqueda,should,yes,no,S05 S07
+Reproducir una canción con audio en segundo plano,reproducción,must,yes,no,S13; modo de fondo de AVAudioSession
+Minirreproductor persistente,reproducción,must,yes,no,global
+Pantalla de reproducción completa con barra de progreso,reproducción,must,yes,no,S13
+Controles en pantalla de bloqueo y Centro de control,reproducción,must,yes,no,MPRemoteCommandCenter
+Aleatorio y repetir (no / todo / una),reproducción,must,yes,no,S13
+Cola: añadir a la cola y reordenar,reproducción,must,yes,no,S14
+Reproducción sin pausas entre canciones,reproducción,should,yes,no,
+Ajuste de fundido entre canciones,reproducción,could,yes,no,S22
+Normalización del volumen,reproducción,could,yes,no,requiere análisis de sonoridad al ingerir
+Temporizador de apagado,reproducción,should,yes,no,
+Selector de salida AirPlay / Bluetooth,reproducción,should,yes,no,S21 con AVRoutePickerView
+Recordar el estado de reproducción al reiniciar la app,reproducción,must,yes,no,
+Letras sincronizadas,reproducción,could,yes,no,S15; solo para letras propias o con licencia
+Créditos de la canción,reproducción,could,yes,no,
+Me gusta en una canción (Canciones que te gustan),biblioteca,must,yes,no,S12
+Tu biblioteca con filtros por tipo,biblioteca,must,yes,no,S08
+Orden de la biblioteca (recientes / añadido / A-Z / creador),biblioteca,should,yes,no,S08
+Fijar hasta 4 elementos en la biblioteca,biblioteca,could,yes,no,S08
+Guardar álbumes y seguir artistas,biblioteca,must,yes,no,S10 S11
+Crear renombrar y borrar playlist,playlists,must,yes,no,S18
+Añadir canción a playlist desde cualquier fila,playlists,must,yes,no,S16 S17
+Reordenar y quitar canciones de una playlist,playlists,must,yes,no,S18
+Portada y descripción propias de la playlist,playlists,should,yes,no,S18
+Portada automática en mosaico 2x2,playlists,should,yes,no,
+Aviso de canción duplicada al añadir,playlists,could,yes,no,
+Carpetas de playlists,playlists,could,yes,no,
+Interruptor de playlist pública / privada,playlists,should,yes,no,
+Playlists colaborativas,playlists,could,yes,no,necesita usuarios propios
+Página de álbum,catálogo,must,yes,no,S10
+Página de artista con canciones populares y discografía,catálogo,must,yes,no,S11
+Etiqueta y filtro de contenido explícito,catálogo,should,yes,no,S22
+Página de pódcast con seguir,pódcasts,must,yes,no,S19
+Reproducir episodio y retomar donde se dejó,pódcasts,must,yes,no,S20 F07
+Velocidad de reproducción de episodios,pódcasts,should,yes,no,
+Marcar episodio como escuchado,pódcasts,should,yes,no,
+Descargar playlists álbumes y episodios sin conexión,sin conexión,must,yes,no,F06; la función premium por la que se paga
+Modo sin conexión que muestra solo lo descargado,sin conexión,should,yes,no,filtro Descargado de S08
+Ajuste de descargar solo con Wi-Fi,sin conexión,should,yes,no,S22
+Ajuste de calidad de audio (streaming y descarga),ajustes,should,yes,no,S22
+Pantalla de ajustes,ajustes,must,yes,no,S22
+Sesión privada,ajustes,could,yes,no,
+Compartir enlace a canción / playlist,social,should,yes,no,F09; enlaces universales
+Perfil de usuario con playlists públicas,social,could,yes,no,S23
+Plan gratis con anuncios y límite de saltos,monetización,could,yes,no,necesita una red de anuncios; quizá ir directo a solo de pago
+Suscripción premium con compra dentro de la app,monetización,must,yes,no,S24; StoreKit
+Portal de subida para artistas / sello para añadir el catálogo,catálogo,must,no,no,no está en la app de Spotify; tu clon lo necesita porque el contenido es tuyo
+Recomendaciones (mezclas personales),descubrimiento,could,yes,no,empezar con reglas sobre tus propios eventos de escucha
+Catálogo musical comercial,contenido,skip,yes,skip,licencias de sellos y editoriales
+Catálogo de letras con licencia,contenido,skip,yes,skip,licencias de proveedores de letras
+Catálogo de audiolibros y horas,contenido,skip,yes,skip,acuerdos con editoriales
+Pódcasts exclusivos / en vídeo,contenido,skip,yes,skip,programas propios o con licencia
+Descubrimiento Semanal / DJ entrenados con datos de Spotify,descubrimiento,skip,yes,skip,sus datos de escucha; rehaz la idea con tus propios datos
+Spotify Connect en hardware de socios,dispositivos,skip,yes,skip,acuerdos con fabricantes de altavoces / televisores / coches
+Usuarios existentes y red social (actividad de amigos / Jam),social,skip,yes,skip,la red no es tuya
+Marca y diseño de Wrapped,social,skip,yes,skip,marca registrada; un resumen anual propio sí vale
+Web API de Spotify como fuente de datos,contenido,skip,yes,skip,los términos para desarrolladores prohíben crear un servicio competidor con ella
+Elementos de marca (logo / verde / fuente Circular / portadas editoriales),marca,skip,yes,skip,solo como referencia en replica/screens
